@@ -18,4 +18,4 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m unittest discover -s "Basic Math Functions" -p "Test_*.py"
+        python -m unittest discover -s . -p "Test_*.py"
