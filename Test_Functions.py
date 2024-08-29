@@ -2,7 +2,7 @@
 
 import unittest
 import math
-from BMF import MathOperations
+from Python_Programs.BMF import MathOperations
 
 class TestMathOperations(unittest.TestCase):
 
