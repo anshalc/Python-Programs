@@ -3,7 +3,7 @@
 class MathOperations:
     
     # Constructor with an Argument
-    def  __init__(self, num=1):
+    def  __init__(self, num=0):
         self.num = num
 
     # Round Up Function Comparable to math.ceil
