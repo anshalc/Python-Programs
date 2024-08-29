@@ -1,0 +1,25 @@
+name: BMF Application
+
+# Controls when the workflow will run
+on: [push, pull_request]
+
+# The list of jobs that will run as part of the workflow
+jobs:
+	test:
+		# The type of virtual machine to run the job on
+		runs-on: ubuntu-latest
+
+		# Steps represent a squence of tasks that will be executed
+		steps:
+		- name: Checkout code
+		  uses: actions/checkout@v3
+
+		- name: Set up Python
+		  uses: actions/setup-python@v4
+		  with:
+			python-version: '3.10'
+
+
+		- name: Run tests
+		  run: |
+		    python -m unittest discover -s . -p "Test_*.py"
