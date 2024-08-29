@@ -28,11 +28,11 @@ class TestMathOperations(unittest.TestCase):
 
     def test_Volumes(self):
         # Setup the processor with the file
-        processor = DimensionProcessor("/Users/anshalchopra/Documents/Projects/Python Programs/Python_Programs/Datasets/Dimensions.json")
+        processor = DimensionProcessor("Python_Programs/Datasets/Dimensions.json")
         expected_volumes = []
 
         # Load the data directly to get the expected volumes
-        with open("/Users/anshalchopra/Documents/Projects/Python Programs/Python_Programs/Datasets/Dimensions.json", 'r') as file:
+        with open("Python_Programs/Datasets/Dimensions.json", 'r') as file:
             data = json.load(file)
             for dim in data['dimensions']:
                 expected_volume = dim['volume']
